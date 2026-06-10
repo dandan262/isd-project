@@ -1,26 +1,5 @@
-\# isdproject
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
 
-
-
-\## Project Context
-
-Ini adalah proyek berbasis AI menggunakan framework GSD Core dan Gemini API.
-
-
-
-\## Tech Stack
-
-\- Frontend: React / Next.js
-
-\- Backend: Node.js / Python
-
-\- AI Runtime: Gemini
-
-
-
-\## Development Rules
-
-\- Selalu perbarui status berkas di folder `.planning/` sebelum membuat kode baru.
-
-\- Buat kode secara bertahap dan terstruktur.
-
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
