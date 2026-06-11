@@ -1,16 +1,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const apiKey = process.env.GEMINI_API_KEY;
-if (!apiKey) {
-  throw new Error("GEMINI_API_KEY is missing in environment variables");
-}
-
+const apiKey = process.env.GEMINI_API_KEY || "";
 const genAI = new GoogleGenerativeAI(apiKey);
 
-export const geminiModel = genAI.getGenerativeModel({ 
+export const geminiModel = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
-  generationConfig: {
-    maxOutputTokens: 2048,
-    temperature: 0.7,
-  }
 });
